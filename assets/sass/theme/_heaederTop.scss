@@ -3,7 +3,9 @@
     .logo {
       a {
         img {
-
+          transition: all 0.5s;
+          max-width: 200px;
+          width: 100%;
         }
       }
     }
@@ -11,12 +13,16 @@
     .rightContactInfo {
       .contactInfo {
         p {
+          color: $light;
+          font-size: $f14;
+          letter-spacing: 1px;
+
           i {
 
           }
 
           a {
-
+            color: $dark;
           }
         }
       }
@@ -24,9 +30,26 @@
       .headerSocial {
         .headerSocialMenu {
           li {
+            margin-left: 10px;
+
             a {
+              width: 25px;
+              height: 25px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 50%;
+              background: $brand;
+              color: $white;
+              transition: all 0.5s;
+              font-size: 12px;
+
               i {
 
+              }
+
+              &:hover {
+                background: $light_green_2;
               }
             }
           }

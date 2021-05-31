@@ -46,14 +46,14 @@
                         <img src="./assets/img/logo.png" alt="logo" class="img-fluid">
                     </div>-->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            data-bs-target="#mainMenu" aria-controls="mainMenu"
                             aria-expanded="false" aria-label="Toggle navigation">
                         0
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <div class="collapse navbar-collapse mainMenu" id="mainMenu">
+                        <ul class="navbar-nav me-auto mainMenuList">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link active">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Link</a>
@@ -72,13 +72,10 @@
                                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                            </li>
                         </ul>
-                        <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        <form class="d-flex searchForm">
+                            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit"><i class="fa fa-search"></i></button>
                         </form>
                     </div>
                 </nav>

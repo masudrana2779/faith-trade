@@ -1,0 +1,42 @@
+.header {
+  background: $brand;
+  padding: 10px 0;
+  transition: all 0.5s;
+  .navbar {
+    padding: 0;
+    .mainMenu {
+      .mainMenuList {
+        .nav-item {
+          .nav-link {
+            font-size: $f13;
+            text-transform: uppercase;
+            font-family: $mon;
+            color: $white;
+            font-weight: 500;
+            &.active {
+              color: $light_green_2;
+            }
+          }
+        }
+      }
+      .searchForm {
+        position: relative;
+        .form-control {
+          border: none;
+          margin: 0;
+          width: 100%;
+          padding-right: 40px;
+
+        }
+        .btn {
+          border: none;
+          box-shadow: none;
+          outline: none;
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+      }
+    }
+  }
+}
