@@ -105,7 +105,7 @@ button:focus {
     position: relative;
     z-index: 1; }
   .btnGlob.btnSolid {
-    background: #4a4745; }
+    background: #1f3159; }
     .btnGlob.btnSolid:hover:before {
       background: #00ac4e;
       width: 100%;
@@ -162,8 +162,8 @@ button:focus {
   z-index: 10; }
 
 .gotop a {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background: #1f3159;
   z-index: 1;
   display: -webkit-box;
@@ -176,7 +176,14 @@ button:focus {
   -ms-flex-pack: center;
   justify-content: center;
   color: #fff;
-  font-size: 30px; }
+  font-size: 30px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  border: 1px solid #eee; }
+  .gotop a:hover {
+    background: #00ac4e;
+    border-color: transparent; }
 
 .headerTop .headerTopInner .logo a img {
   -webkit-transition: all 0.5s;
@@ -525,7 +532,18 @@ button:focus {
     padding: 40px 0 20px; } }
 
 .footer {
-  background: #4a4745; }
+  background: #4a4745 url("../../assets/img/footerbg.jpg") no-repeat scroll center bottom/cover;
+  position: relative;
+  z-index: 1; }
+  .footer:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1; }
   .footer .footerTop {
     padding: 50px 0; }
 
@@ -602,7 +620,7 @@ button:focus {
     font-size: 20px; }
 
 .footerBottom {
-  background: #134761;
+  background: #1f3159;
   padding: 20px 0; }
   .footerBottom .copyRight p {
     color: #fff;

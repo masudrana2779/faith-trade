@@ -1,5 +1,17 @@
 .footer {
-  background: $dark;
+  background: $dark url("../../assets/img/footerbg.jpg") no-repeat scroll center bottom / cover;
+  position: relative;
+  z-index: 1;
+  &:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+  }
 
   .footerTop {
     padding: 50px 0;
@@ -101,7 +113,7 @@
 }
 
 .footerBottom {
-  background: #134761;
+  background: $brand;
   padding: 20px 0;
 
   .copyRight {

@@ -102,7 +102,7 @@ button:focus {
   }
 
   &.btnSolid {
-    background: $dark;
+    background: $brand;
 
     &:hover {
       &:before {
@@ -183,8 +183,8 @@ button:focus {
 }
 
 .gotop a {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background: $brand;
   z-index: 1;
   display: flex;
@@ -192,4 +192,10 @@ button:focus {
   justify-content: center;
   color: #fff;
   font-size: 30px;
+  transition: all 0.5s;
+  border: 1px solid #eee;
+  &:hover {
+    background: $light_green_2;
+    border-color: transparent;
+  }
 }
