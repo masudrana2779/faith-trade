@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $mon;
+  font-size: $f16;
+  line-height: 26px;
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dl, ol, ul {
+  margin: 0;
+}
+
+p {
+  font-size: $f14;
+  font-family: $mon;
+  line-height: 24px;
+}
+
+a {
+  display: inline-block;
+}
+
+a,
+.btn,
+button {
+  text-decoration: none;
+  outline: none;
+}
+
+a:hover,
+a:focus,
+.btn:hover,
+.btn:focus,
+button:hover,
+button:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: none;
+  box-shadow: none;
+}
+
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+.displayInline {
+  display: inline-block;
+}
+
+.btnGlob {
+  color: $white;
+  font-size: $f18;
+  line-height: 28px;
+  font-family: $rnr;
+  border-radius: 0;
+  position: relative;
+  padding: 10px 45px;
+  border: none;
+
+  &:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: $brand;
+    transition: all 0.5s;
+    //opacity: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  .btnText {
+    position: relative;
+    z-index: 1;
+  }
+
+  &.btnSolid {
+    background: $dark;
+
+    &:hover {
+      &:before {
+        background: $brand;
+        width: 100%;
+        opacity: 1;
+      }
+    }
+  }
+
+  &.btnBrand {
+    background: $brand;
+
+    &:hover {
+      &:before {
+        background: $dark;
+        width: 100%;
+        opacity: 1;
+      }
+    }
+  }
+
+  &:hover {
+    color: $white;
+  }
+}
+
+.secSubTitle {
+  font-size: $f16;
+  color: $brand;
+  font-family: $rnseb;
+  text-transform: capitalize;
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 15px;
+
+  &:before {
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: $brand;
+    top: 2px;
+    left: 0;
+  }
+}
+
+.secTitle {
+  font-size: $f48;
+  line-height: 60px;
+  color: $brand_dark;
+  font-family: $rnseb;
+  margin-bottom: 35px;
+}
+
+
+@media (max-width: 1024px) {
+  .secTitle {
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
+
+@media (max-width: 768px) {
+  .secTitle {
+    font-size: 30px;
+    line-height: 38px;
+  }
+}
+
+.gotop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+.gotop a {
+  width: 50px;
+  height: 50px;
+  background: $brand;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 30px;
+}
