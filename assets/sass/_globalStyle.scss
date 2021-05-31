@@ -24,7 +24,7 @@ dl, ol, ul {
 }
 
 p {
-  font-size: $f16;
+  font-size: $f14;
   font-family: $mon;
   line-height: 26px;
 }
@@ -89,10 +89,10 @@ button:focus {
     left: 0;
     width: 0%;
     height: 100%;
-    background: $brand;
+    background: $light_green_2;
     transition: all 0.5s;
     //opacity: 0;
-    right: 0;
+    //right: 0;
     margin: 0 auto;
   }
 
@@ -106,9 +106,11 @@ button:focus {
 
     &:hover {
       &:before {
-        background: $brand;
+        background: $light_green_2;
         width: 100%;
         opacity: 1;
+        left: auto;
+        right: 0;
       }
     }
   }
@@ -155,7 +157,7 @@ button:focus {
   line-height: 60px;
   color: $brand_dark;
   font-family: $rnseb;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 
 
