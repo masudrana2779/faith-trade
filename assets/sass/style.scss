@@ -3,6 +3,10 @@
 
 @import './variable';
 @import './globalStyle';
+
+@import "../vendors/owl-carousel/assets/owl.carousel.min.css";
+@import "../vendors/owl-carousel/assets/owl.theme.default.min.css";
+
 @import './theme/heaederTop';
 @import './theme/header';
 @import './theme/banner';

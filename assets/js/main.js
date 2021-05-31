@@ -30,7 +30,8 @@
         function bannerSlider() {
             $(".bannerSlider").owlCarousel({
                 items: 1,
-                nav: true,
+                nav: false,
+                dots: false,
                 loop: true,
                 autoplay: true,
                 responsive: {
@@ -49,7 +50,7 @@
             });
         }
 
-        // bannerSlider();
+        bannerSlider();
 
 
 
