@@ -228,7 +228,11 @@ button:focus {
   padding: 10px 0;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
-  transition: all 0.5s; }
+  transition: all 0.5s;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10; }
   .header .navbar {
     padding: 0; }
     .header .navbar .mainMenu .mainMenuList .nav-item .nav-link {

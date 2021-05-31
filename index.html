@@ -7,7 +7,7 @@
     <title>Faith Trade</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body id="home">
+<body id="home" data-bs-spy="scroll" data-bs-target="#MainNavbar" data-bs-offset="10" class="scrollspy-example">
 
 <div class="headerTop">
     <div class="container">
@@ -42,7 +42,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <nav class="navbar navbar-expand-lg">
+                <nav class="navbar navbar-expand-lg" id="MainNavbar">
                     <!--<div class="logo">
                         <img src="./assets/img/logo.png" alt="logo" class="img-fluid">
                     </div>-->
@@ -54,12 +54,24 @@
                     <div class="collapse navbar-collapse mainMenu" id="mainMenu">
                         <ul class="navbar-nav me-auto mainMenuList">
                             <li class="nav-item">
-                                <a class="nav-link active">Home</a>
+                                <a href="#home" class="nav-link active">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
+                                <a class="nav-link" href="#">COVID-19</a>
                             </li>
-                            <li class="nav-item dropdown">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Curriculum Vitae</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#services">Our Services</a>
+                            </li>
+                            <!--<li class="nav-item">
+                                <a class="nav-link" href="#">Our Clients</a>
+                            </li>-->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#ContactUs">Contact Us</a>
+                            </li>
+                            <!--<li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                    data-bs-toggle="dropdown" aria-expanded="false">
                                     Dropdown
@@ -72,7 +84,7 @@
                                     </li>
                                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
-                            </li>
+                            </li>-->
                         </ul>
                         <form class="d-flex searchForm">
                             <input class="form-control" type="search" placeholder="Search" aria-label="Search">
@@ -113,7 +125,7 @@
 </div>
 <!--bannerWrap-->
 
-<div class="companyOverviewWrap">
+<div class="companyOverviewWrap" id="services">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -234,7 +246,7 @@
 
 
 <!-- Start contact_form_wrap -->
-<section class="contact_form_wrap pb_100" id="contact">
+<section class="contact_form_wrap pb_100" id="ContactUs">
     <div class="container">
         <div class="row">
             <div class="col-12">
