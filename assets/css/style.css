@@ -79,13 +79,14 @@ button:focus {
 
 .btnGlob {
   color: #fff;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 28px;
   font-family: "revx_neue_demoregular", sans-serif;
-  border-radius: 0;
+  border-radius: 50px;
   position: relative;
-  padding: 10px 45px;
-  border: none; }
+  padding: 5px 30px;
+  border: none;
+  overflow: hidden; }
   .btnGlob:before {
     position: absolute;
     content: "";
@@ -243,5 +244,162 @@ button:focus {
         position: absolute;
         right: 0;
         top: 0; }
+
+.footer {
+  background: #4a4745; }
+  .footer .footerTop {
+    padding: 50px 0; }
+
+.footerSingleItem .footerTitle {
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: "revx_neue_demosemi_bold", sans-serif;
+  margin-bottom: 20px; }
+
+.footerSingleItem .footerPara {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 30px;
+  padding-right: 40px;
+  text-align: justify; }
+
+.footerSingleItem .footerMenu {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .footerSingleItem .footerMenu li {
+    margin-bottom: 10px; }
+    .footerSingleItem .footerMenu li a {
+      color: #fff;
+      font-family: "Montserrat", sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 30px;
+      position: relative;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s; }
+      .footerSingleItem .footerMenu li a:before {
+        position: absolute;
+        content: '';
+        left: 10px;
+        opacity: 0;
+        top: 15px;
+        width: 5px;
+        height: 1px;
+        background: #fff;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s; }
+      .footerSingleItem .footerMenu li a:hover {
+        padding-left: 10px; }
+        .footerSingleItem .footerMenu li a:hover:before {
+          opacity: 1;
+          left: 0; }
+
+.footerSingleItem .footerContact .footerLogo {
+  margin-bottom: 15px; }
+  .footerSingleItem .footerContact .footerLogo img {
+    max-width: 190px;
+    width: 100%; }
+
+.footerSingleItem .footerContact .footerAddress p {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 30px;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 10px; }
+  .footerSingleItem .footerContact .footerAddress p i {
+    position: absolute;
+    left: 0;
+    top: 8px;
+    font-size: 20px; }
+
+.footerBottom {
+  background: #134761;
+  padding: 20px 0; }
+  .footerBottom .copyRight p {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 30px; }
+  .footerBottom .footerSocial ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+    .footerBottom .footerSocial ul li {
+      margin-right: 10px; }
+      .footerBottom .footerSocial ul li:last-child {
+        margin-right: 0; }
+      .footerBottom .footerSocial ul li a {
+        width: 40px;
+        height: 40px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        color: #69788d;
+        background: #fbfbfd;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+        border-radius: 50%; }
+        .footerBottom .footerSocial ul li a:hover {
+          background: #1f3159;
+          color: #fff; }
+
+.footerLogoSliderWrap .footerLogoSlider {
+  background: #1f3159;
+  border-radius: 10px;
+  padding: 20px 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+  .footerLogoSliderWrap .footerLogoSlider .logoSliderItem img {
+    max-width: 150px;
+    width: 100%;
+    margin: 0 auto; }
+
+@media (max-width: 768px) {
+  .footerSingleItem {
+    margin-bottom: 50px; }
+  .footer .footerTop {
+    padding-bottom: 20px; }
+  .footerLogoSliderWrap .footerLogoSlider {
+    padding: 0; }
+  .footerBottom .row.align-items-center {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse; }
+  .footerBottom {
+    padding: 40px 0; }
+  .footerBottom .footerSocial ul {
+    margin-bottom: 30px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; } }
 
 /*==========================================================*/

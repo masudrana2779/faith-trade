@@ -73,13 +73,14 @@ button:focus {
 
 .btnGlob {
   color: $white;
-  font-size: $f18;
+  font-size: $f14;
   line-height: 28px;
   font-family: $rnr;
-  border-radius: 0;
+  border-radius: 50px;
   position: relative;
-  padding: 10px 45px;
+  padding: 5px 30px;
   border: none;
+  overflow: hidden;
 
   &:before {
     position: absolute;

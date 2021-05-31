@@ -49,7 +49,7 @@
             });
         }
 
-        bannerSlider();
+        // bannerSlider();
 
 
 
