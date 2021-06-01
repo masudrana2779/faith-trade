@@ -350,6 +350,21 @@ button:focus {
     font-size: 20px;
     margin-bottom: 70px; }
 
+@media (max-width: 767px) {
+  .bannerContent {
+    padding: 50px 0; }
+  .bannerContent .bannerTitle {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 25px; }
+  .bannerContent .bannerTitle br {
+    display: none; }
+  .bannerContent .bannerPara br {
+    display: none; }
+  .bannerContent .bannerPara {
+    font-size: 16px;
+    margin-bottom: 40px; } }
+
 .companyOverviewWrap {
   padding: 50px 0;
   background: #f1f1f1; }
