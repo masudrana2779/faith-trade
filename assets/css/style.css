@@ -188,11 +188,11 @@ button:focus {
 
 .mbShow {
   display: none; }
-  @media (max-width: 767px) {
+  @media (max-width: 991px) {
     .mbShow {
       display: inline-block !important; } }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .mbHide {
     display: none !important; } }
 
@@ -234,7 +234,7 @@ button:focus {
       .headerTop .headerTopInner .rightContactInfo .headerSocial .headerSocialMenu li a:hover {
         background: #00ac4e; }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .headerTop .headerTopInner .rightContactInfo {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -361,6 +361,14 @@ button:focus {
     font-size: 20px;
     margin-bottom: 70px; }
 
+@media (max-width: 991px) {
+  .bannerContent {
+    padding: 70px 0; }
+  .bannerContent .bannerPara {
+    margin-bottom: 40px; }
+  .bannerContent .bannerTitle {
+    margin-bottom: 25px; } }
+
 @media (max-width: 767px) {
   .bannerContent {
     padding: 50px 0; }
@@ -486,7 +494,7 @@ button:focus {
     margin-bottom: 10px; } }
 
 .contact_form_wrap {
-  padding: 110px 0 90px; }
+  padding: 60px 0 40px; }
   .contact_form_wrap .get_touch {
     color: #646c84;
     font-size: 20px;

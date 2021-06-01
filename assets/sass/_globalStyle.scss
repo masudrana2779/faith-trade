@@ -204,12 +204,12 @@ button:focus {
 
 .mbShow {
   display: none;
-  @media (max-width: 767px) {
+  @media (max-width: 991px) {
     display: inline-block !important;
   }
 }
 .mbHide {
-  @media (max-width: 767px) {
+  @media (max-width: 991px) {
     display: none !important;
   }
 }
