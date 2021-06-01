@@ -128,12 +128,12 @@
     color: $white;
     font-size: $f20;
     margin-bottom: 70px;
-    animation: fadeOutDown 1s both;
+    animation: fadeOutUp 1s both;
   }
 
   .btnWrap {
     .btnGlob {
-      animation: fadeOutDown 1s both;
+      animation: fadeOutUp 1s both;
     }
   }
 }

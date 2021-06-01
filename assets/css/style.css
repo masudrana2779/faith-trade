@@ -436,11 +436,11 @@ button:focus {
     color: #fff;
     font-size: 20px;
     margin-bottom: 70px;
-    -webkit-animation: fadeOutDown 1s both;
-    animation: fadeOutDown 1s both; }
+    -webkit-animation: fadeOutUp 1s both;
+    animation: fadeOutUp 1s both; }
   .bannerContent .btnWrap .btnGlob {
-    -webkit-animation: fadeOutDown 1s both;
-    animation: fadeOutDown 1s both; }
+    -webkit-animation: fadeOutUp 1s both;
+    animation: fadeOutUp 1s both; }
 
 @media (max-width: 991px) {
   .bannerContent {
