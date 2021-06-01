@@ -52,7 +52,7 @@
   }
 
   .owl-prev {
-    left: 100px;
+    left: 50px;
 
     &:before {
       content: "←";
@@ -60,7 +60,7 @@
   }
 
   .owl-next {
-    right: 100px;
+    right: 50px;
 
     &:before {
       content: "→";

@@ -385,12 +385,12 @@ button:focus {
     display: none; }
 
 .bannerSlider .owl-prev {
-  left: 100px; }
+  left: 50px; }
   .bannerSlider .owl-prev:before {
     content: "←"; }
 
 .bannerSlider .owl-next {
-  right: 100px; }
+  right: 50px; }
   .bannerSlider .owl-next:before {
     content: "→"; }
 
