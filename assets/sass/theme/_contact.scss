@@ -1,6 +1,6 @@
 
 .contact_form_wrap {
-  padding: 60px 0 40px;
+  padding: 80px 0 50px;
   .get_touch {
     color: #646c84;
     font-size: 20px;
@@ -211,7 +211,9 @@
 
 // responsive style
 @media (max-width: 991px) {
-
+  .contact_form_wrap {
+    padding: 60px 0 40px;
+  }
 }
 
 @media (max-width: 767px) {
