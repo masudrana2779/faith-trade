@@ -316,7 +316,9 @@ button:focus {
         width: 100%;
         padding-right: 40px;
         background: transparent;
-        border: 1px solid #eee; }
+        border: 1px solid #eee;
+        -webkit-box-shadow: none;
+        box-shadow: none; }
       .header .navbar .mainMenu .searchForm .btn {
         border: none;
         -webkit-box-shadow: none;
