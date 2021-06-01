@@ -321,6 +321,12 @@ button:focus {
         right: 0;
         top: 0; }
 
+@media (max-width: 767px) {
+  .header .navbar .mainMenu .mainMenuList {
+    margin-top: 15px; }
+  .header .navbar .mainMenu .searchForm {
+    margin-bottom: 15px; } }
+
 .bannerSlider .bannerSliderItem {
   background: url("../../assets/img/banner/bannre_3.jpg") no-repeat scroll 0 0/cover;
   position: relative;
@@ -356,7 +362,8 @@ button:focus {
   .bannerContent .bannerTitle {
     font-size: 30px;
     line-height: 36px;
-    margin-bottom: 25px; }
+    margin-bottom: 25px;
+    letter-spacing: -1px; }
   .bannerContent .bannerTitle br {
     display: none; }
   .bannerContent .bannerPara br {

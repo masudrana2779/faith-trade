@@ -120,3 +120,17 @@
     }
   }
 }
+
+
+
+// responsive style
+
+
+@media (max-width: 767px) {
+  .header .navbar .mainMenu .mainMenuList {
+    margin-top: 15px;
+  }
+  .header .navbar .mainMenu .searchForm {
+    margin-bottom: 15px;
+  }
+}
