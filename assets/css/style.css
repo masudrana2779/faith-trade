@@ -455,6 +455,24 @@ button:focus {
           padding-left: 5px;
           margin-right: -5px; }
 
+@media (max-width: 767px) {
+  .companyOverviewWrap .serviceTop p br {
+    display: none; }
+  .serviceWrap {
+    margin: 0 -15px;
+    padding-top: 10px; }
+  .serviceItem {
+    padding: 0 15px; }
+  .serviceSingleItem {
+    height: 250px;
+    padding: 0 15px; }
+  .serviceSingleItem .serviceInner .serviceInfo .serviceTtile {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 5px; }
+  .serviceSingleItem .serviceInner .serviceInfo .serPrice {
+    margin-bottom: 10px; } }
+
 .contact_form_wrap {
   padding: 110px 0 90px; }
   .contact_form_wrap .get_touch {
