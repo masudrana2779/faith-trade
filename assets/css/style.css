@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*==========================================================*/
 /*----------------------------------------------------
 @File: Default Styles
@@ -15,6 +16,7 @@
 /* bootstrap */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+@import url(../vendors/animation/animate.css);
 @import url(../vendors/owl-carousel/assets/owl.carousel.min.css);
 @import url(../vendors/owl-carousel/assets/owl.theme.default.min.css);
 * {
@@ -336,6 +338,62 @@ button:focus {
   .header .navbar .mainMenu .searchForm {
     margin-bottom: 15px; } }
 
+.bannerSlider .owl-prev,
+.bannerSlider .owl-next {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 1;
+  border-radius: 50%;
+  overflow: hidden; }
+  .bannerSlider .owl-prev:before,
+  .bannerSlider .owl-next:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 25px;
+    background: #1f3159;
+    color: #fff;
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    opacity: 0.25; }
+  .bannerSlider .owl-prev:hover:before,
+  .bannerSlider .owl-next:hover:before {
+    background: #00ac4e !important;
+    color: #fff;
+    opacity: 1; }
+  .bannerSlider .owl-prev span,
+  .bannerSlider .owl-next span {
+    display: none; }
+
+.bannerSlider .owl-prev {
+  left: 100px; }
+  .bannerSlider .owl-prev:before {
+    content: "←"; }
+
+.bannerSlider .owl-next {
+  right: 100px; }
+  .bannerSlider .owl-next:before {
+    content: "→"; }
+
 .bannerSlider .bannerSliderItem {
   background: url("../../assets/img/banner/bannre_3.jpg") no-repeat scroll 0 0/cover;
   position: relative;
@@ -353,17 +411,36 @@ button:focus {
     background: linear-gradient(90deg, #000, transparent);
     z-index: -1; }
 
+.bannerSlider .active .bannerSliderItem .bannerContent .bannerTitle {
+  -webkit-animation: fadeInDown 0.5s ease 0.5s both;
+  animation: fadeInDown 0.5s ease 0.5s both; }
+
+.bannerSlider .active .bannerSliderItem .bannerContent .bannerPara {
+  -webkit-animation: fadeInDown 0.6s ease 0.6s both;
+  animation: fadeInDown 0.6s ease 0.6s both; }
+
+.bannerSlider .active .bannerSliderItem .bannerContent .btnWrap .btnGlob {
+  -webkit-animation: fadeInDown 0.7s ease 0.7s both;
+  animation: fadeInDown 0.7s ease 0.7s both; }
+
 .bannerContent {
   padding: 150px 0; }
   .bannerContent .bannerTitle {
     color: #fff;
     font-size: 40px;
     line-height: 46px;
-    margin-bottom: 45px; }
+    margin-bottom: 45px;
+    -webkit-animation: fadeOutUp 1s both;
+    animation: fadeOutUp 1s both; }
   .bannerContent .bannerPara {
     color: #fff;
     font-size: 20px;
-    margin-bottom: 70px; }
+    margin-bottom: 70px;
+    -webkit-animation: fadeOutDown 1s both;
+    animation: fadeOutDown 1s both; }
+  .bannerContent .btnWrap .btnGlob {
+    -webkit-animation: fadeOutDown 1s both;
+    animation: fadeOutDown 1s both; }
 
 @media (max-width: 991px) {
   .bannerContent {
