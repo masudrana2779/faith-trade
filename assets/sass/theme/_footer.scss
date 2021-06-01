@@ -154,7 +154,7 @@
           border-radius: 50%;
 
           &:hover {
-            background: $brand;
+            background: $light_green_2;
             color: #fff;
           }
         }
@@ -180,7 +180,7 @@
   }
 }
 
-
+// responsive style
 @media (max-width: 768px) {
   .footerSingleItem {
     margin-bottom: 50px;
