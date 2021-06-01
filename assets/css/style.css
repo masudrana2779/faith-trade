@@ -164,6 +164,7 @@ button:focus {
 .gotop a {
   width: 40px;
   height: 40px;
+  border-radius: 50%;
   background: #1f3159;
   z-index: 1;
   display: -webkit-box;
@@ -249,7 +250,11 @@ button:focus {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 10; }
+  z-index: 10;
+  transition: all 0.5s; }
+  .header.fixdHeader {
+    -webkit-box-shadow: 0 5px 10px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.1); }
   .header .navbar {
     padding: 0; }
     .header .navbar .logo a img {
