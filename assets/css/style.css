@@ -223,6 +223,15 @@ button:focus {
       .headerTop .headerTopInner .rightContactInfo .headerSocial .headerSocialMenu li a:hover {
         background: #00ac4e; }
 
+@media (max-width: 767px) {
+  .headerTop .headerTopInner .logo {
+    display: none; }
+  .headerTop .headerTopInner .rightContactInfo {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%; } }
+
 .header {
   background: #1f3159;
   padding: 10px 0;
@@ -235,6 +244,49 @@ button:focus {
   z-index: 10; }
   .header .navbar {
     padding: 0; }
+    .header .navbar .logo a img {
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+      max-width: 170px;
+      width: 100%; }
+    .header .navbar .navbar-toggler {
+      padding: 0;
+      outline: none;
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+      .header .navbar .navbar-toggler .bar_icon {
+        width: 30px;
+        height: 16px;
+        position: relative;
+        display: inline-block; }
+        .header .navbar .navbar-toggler .bar_icon .bar {
+          position: absolute;
+          width: 100%;
+          background: white;
+          height: 2px;
+          left: 0;
+          -webkit-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s; }
+          .header .navbar .navbar-toggler .bar_icon .bar.bar_1 {
+            top: 0; }
+          .header .navbar .navbar-toggler .bar_icon .bar.bar_2 {
+            top: 50%; }
+          .header .navbar .navbar-toggler .bar_icon .bar.bar_3 {
+            top: 100%; }
+      .header .navbar .navbar-toggler[aria-expanded="true"] .bar.bar_1 {
+        top: 50%;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg); }
+      .header .navbar .navbar-toggler[aria-expanded="true"] .bar.bar_2 {
+        opacity: 0; }
+      .header .navbar .navbar-toggler[aria-expanded="true"] .bar.bar_3 {
+        top: 50%;
+        -webkit-transform: rotate(-45deg) translateY(-50%);
+        -ms-transform: rotate(-45deg) translateY(-50%);
+        transform: rotate(-45deg) translateY(-50%); }
     .header .navbar .mainMenu .mainMenuList .nav-item .nav-link {
       font-size: 13px;
       text-transform: uppercase;
