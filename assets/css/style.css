@@ -185,6 +185,16 @@ button:focus {
     background: #00ac4e;
     border-color: transparent; }
 
+.mbShow {
+  display: none; }
+  @media (max-width: 767px) {
+    .mbShow {
+      display: inline-block !important; } }
+
+@media (max-width: 767px) {
+  .mbHide {
+    display: none !important; } }
+
 .headerTop {
   padding: 10px 0; }
   .headerTop .headerTopInner .logo a img {
@@ -224,8 +234,6 @@ button:focus {
         background: #00ac4e; }
 
 @media (max-width: 767px) {
-  .headerTop .headerTopInner .logo {
-    display: none; }
   .headerTop .headerTopInner .rightContactInfo {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -301,7 +309,9 @@ button:focus {
         border: none;
         margin: 0;
         width: 100%;
-        padding-right: 40px; }
+        padding-right: 40px;
+        background: transparent;
+        border: 1px solid #eee; }
       .header .navbar .mainMenu .searchForm .btn {
         border: none;
         -webkit-box-shadow: none;

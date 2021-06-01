@@ -199,3 +199,16 @@ button:focus {
     border-color: transparent;
   }
 }
+
+
+.mbShow {
+  display: none;
+  @media (max-width: 767px) {
+    display: inline-block !important;
+  }
+}
+.mbHide {
+  @media (max-width: 767px) {
+    display: none !important;
+  }
+}
